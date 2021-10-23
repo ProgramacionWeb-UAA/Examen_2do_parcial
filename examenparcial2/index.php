@@ -8,14 +8,9 @@
 </head>
 <body>
 
-    
-    
-
-
     <form action="procesar.php" method="post" class="contact_form">
                 <section class="encabezado">
                     <h2>Formulario CURP</h2>
-                    <span id="requeridos" class="required_notification">*Datos Requeridos</span>
                 </section>
                 <!--**********************************************************************************-->
                 <div class="contenedor">
@@ -147,11 +142,9 @@
                 </div>
                 </div>
                 <!--**********************************************************************************-->
+                 <!--HOLAAA-->
 
-             
-            
 
-    
     </form>
     
 </body>
