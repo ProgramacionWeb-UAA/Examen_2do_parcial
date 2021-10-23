@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
+   
     <h1>CURP</h1>
     <p>Formulario para tramite de la CURP</p>
     <form action="procesar.php" method="post" class="contact_form">
@@ -36,42 +37,46 @@
                 <!--**********************************************************************************-->
                 <li>
                 <label for="genero">Genero:</label>
-                <input type="radio" name="genero" value="Hombre">Hombre <br>
-                <input type="radio" name="genero" value="Mujer">Mujer <br>
+                <input type="radio" name="genero" value="H">Hombre <br>
+                <input type="radio" name="genero" value="M">Mujer <br>
                 </li>
                 <!--**********************************************************************************-->
                 
                 <li>
                     <label for="fechanacimiento">Fecha de Nacimiento:</label>
                     <select name="dia" id="dia">
-                           <option>Dias de la semana </option>
-                           <option value="lunes">Lunes</option>
-                           <option value="martes">Martes</option>
-                           <option value="miercoles">Miercoles</option>
-                           <option value="jueves">Jueves</option>
-                           <option value="viernes">Viernes</option>
-                           <option value="sabado">Sabado</option>
-                           <option value="domingo">Domingo</option>
+                           <option>Dia</option>
+                           <?php
+                            $num='00';
+                               for($i=1;$i<=31;$i++){
+                                   if($i<10){
+                                       $num='0'.$i;
+                                   }else{
+                                       $num=$i;
+                                   }
+                                   echo '<option value="'.$num.'">'.$num.'</option>';
+                               }
+                           ?>
                        </select>
                     <select name="mes" id="mes">
                            <option>Meses del Año </option>
-                           <option value="enero">Enero</option>
-                           <option value="febrero">Febrero</option>
-                           <option value="marzo">Marzo</option>
-                           <option value="abril">Abril</option>
-                           <option value="mayo">Mayo</option>
-                           <option value="junio">Junio</option>
-                           <option value="julio">Julio</option>
-                           <option value="agosto">Agosto</option>
-                           <option value="septiembre">Septiembre</option>
-                           <option value="octubre">Octubre</option>
-                           <option value="noviembre">Noviembre</option>
-                           <option value="diciembre">Diciembre</option>
+                           <option value="01">Enero</option>
+                           <option value="02">Febrero</option>
+                           <option value="03">Marzo</option>
+                           <option value="04">Abril</option>
+                           <option value="05">Mayo</option>
+                           <option value="06">Junio</option>
+                           <option value="07">Julio</option>
+                           <option value="08">Agosto</option>
+                           <option value="09">Septiembre</option>
+                           <option value="10">Octubre</option>
+                           <option value="11">Noviembre</option>
+                           <option value="12">Diciembre</option>
                        </select>
-                    <select name="año" id="año">
-                           <option value="0">Año</option>
+                    <select name="anio" id="anio">
+                            <option disabled selected>Año</option>
                            <?php
-                               for($i=1990;$i<=2021;$i++){
+                               for($i=1950;$i<=2021;$i++){
                                echo '<option value="'.$i.'">'.$i.'</option>';
                                }
                            ?>
@@ -124,9 +129,13 @@
                 </li>
                 
                 <!--**********************************************************************************-->
-                
+                <div class="botones">
+                   <input id="enviar" type="submit" value="Enviar" class="btn">
+                   <input id="borrar" type="reset" value="BORRAR" class="btn">   
+               </div>
             </ul>
         </div>
     </form>
+    
 </body>
 </html>
