@@ -27,11 +27,13 @@ body{
     display: flex;
     width: 80%;
     height: 90%;
-    background-color: firebrick;
+    /*background-color: firebrick;*/
+    background: linear-gradient(45deg,firebrick 70%,antiquewhite);
     margin: auto;
     box-shadow: 2px 2px 3px 5px white;
-    padding: 50px 150px;
+    padding: 50px 70px;
     box-sizing: border-box;
+    border-radius: 10px;
 }
 .contenedor .sec-izq{
     width: 50%;
@@ -58,15 +60,17 @@ body{
 
 
 .sec-nombre *,.sec-fecha *, .sec-other *{
-    width: 50%;
+    width: 80%;
     height: 25px;
     border-radius: 10px;
     font-weight: 800;
-    text-align: center;
+    text-align:center;
     
     margin-bottom: 6px;
 }
 .sec-nombre label, .sec-fecha label, .sec-other label{
+    font-family: "calibri";
+    font-size: 20px;
     line-height: 40px;
 }
 
@@ -85,15 +89,25 @@ body{
 }
 
 input[type="text"],select{
-    
+    font-size: 12px;
     box-shadow: 5px 2px 10px aqua;
 }
-
+#enti{
+    
+    height: 30px;
+    
+}
+.botones{
+   
+    width: 80%;
+   
+    padding: 0px 15px;
+}
 #submit{
-    margin-top: 20px;
      display: inline-flex;
+    margin-top: 20px;
     width: 100px;
-    margin-right: 50px;
+    margin-right: 10px;
     border-radius: 10px;
     border: 3px aqua;
     border-style: solid double; 
@@ -101,6 +115,7 @@ input[type="text"],select{
     font-weight: bold;
     cursor: pointer;
     
+    justify-content: center;
 }
 #submit:hover{
     transition: all .5s ease 0.4s;

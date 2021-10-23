@@ -16,21 +16,21 @@
                 <div class="contenedor">
                 <div class="sec-izq">
                 <div class="sec-nombre">
-                   <label for="names">Nombres:</label>
+                   <label for="names">Nombres</label>
                    <input type="text" name="nombres" id="nombres" placeholder="Escribe tu(s) nombre(s)" required>
                    <!--<span class="form_hint">Formato correcto: "Nombre(s)"</span>-->
-                    <label for="primerapellido">Primer Apellido:</label>
+                    <label for="primerapellido">Primer Apellido</label>
                     <input type="text" name="apellido1" id="primerapellido" placeholder="Escribe tu primer apellido" required>
                     <!--<span class="form_hint">Formato correcto: "Primer Apellido"</span>-->
                
-                    <label for="segundoapellido">Segundo Apellido:</label>
+                    <label for="segundoapellido">Segundo Apellido</label>
                     <input type="text" name="apellido2" id="segundoapellido" placeholder="Escribe tu segundo apellido" required>
                     <!--<span class="form_hint">Formato correcto: "Segundo Apellido"</span>-->
                 
                 <!--**********************************************************************************-->
 
                
-                    <label id="genero" for="genero">Genero:</label>
+                    <label id="genero" for="genero">Genero</label>
                     
                        <section class="hombre">
                         <input id="radio" type="radio" name="genero" value="H">
@@ -47,7 +47,7 @@
                 </div>
                 
                 <div class="sec-fecha">
-                    <label for="fechanacimiento">Fecha de Nacimiento:</label>
+                    <label for="fechanacimiento">Fecha de Nacimiento</label>
                     <select name="dia" id="dia">
                            <option>Dia</option>
                            <?php
@@ -91,7 +91,7 @@
                 <div class="sec-der">
                    <div class="sec-other">
                   
-                    <label for="entidad">Entidad Federativa:</label>
+                    <label for="entidad">Entidad Federativa</label>
                      <select name="enti" id="enti">
                           <option disabled selected>-Selecciona una opción-</option>
                            <option value="AS">AGUASCALIENTES</option>
@@ -130,7 +130,7 @@
                 <!--**********************************************************************************-->
                 
                 
-                    <label for="correo">Correo Electrónico:</label>
+                    <label for="correo">Correo Electrónico</label>
                      <input type="text" name="correo" id="correo" placeholder="Escriba aqui su correo electrónico" required>
                 
                 </div>
