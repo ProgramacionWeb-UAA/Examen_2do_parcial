@@ -35,12 +35,16 @@
                 <!--**********************************************************************************-->
 
                
-                <label id="radio" for="genero">Genero:</label>
-                <input id="radio" type="radio" name="genero" value="H">
-                <label id="radio" for="">Hombre</label>
-                <input id="radio" type="radio" name="genero" value="M">
-                <label id="radio" for="">Mujer</label>
-
+                    <label id="genero" for="genero">Genero:</label>
+                    
+                       <section class="hombre">
+                        <input id="radio" type="radio" name="genero" value="H">
+                        <label class="label-radio" id="radio" for="">Hombre</label>
+                    </section>
+                    <section class="mujer">
+                        <input id="radio" type="radio" name="genero" value="M">
+                        <label class="label-radio" id="radio" for="">Mujer</label>
+                    </section>
            
                 
 
