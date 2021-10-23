@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Prompt:wght@100&display=swap');
+
+body{
+    
+    
+    background-color: goldenrod;
+    background-size: 100vw 100vh;
+    background-attachment: fixed;
+    
+}
+
+
+
+.encabezado {
+    
+    margin: auto;
+    font-family: 'Prompt', sans-serif;
+    font-size: 25px;
+    text-align: center;
+    font-weight: 900;
+}
+#requeridos{
+    
+    box-shadow: 5px 2px 5px aqua inset;
+    font-style: italic;
+    
+}
+.contenedor{
+    display: flex;
+    width: 80%;
+    height: 90%;
+    background-color: firebrick;
+    margin: auto;
+    box-shadow: 2px 2px 3px 5px white;
+    padding: 15px;
+    box-sizing: border-box;
+}
+.contenedor .sec-izq{
+    width: 50%;
+    height: 100%;
+   
+}
+
+.contenedor .sec-der{
+    width: 50%;
+    height: 100%;
+    
+    
+    
+}
+
+
+
+.contenedor .sec-izq *,.contenedor .sec-der *{
+    
+    display:block;
+     
+    
+}
+
+
+.sec-nombre *,.sec-fecha *, .sec-other *{
+    width: 50%;
+    height: 25px;
+    border-radius: 10px;
+    font-weight: 800;
+    text-align: center;
+    
+    margin-bottom: 6px;
+}
+
+
+#radio{
+     width: 8%;
+    height: 15px;
+     display: inline-flex;
+}
+input[type="text"],select{
+    
+    box-shadow: 5px 2px 10px aqua;
+}
+
+#submit{
+    margin-top: 20px;
+     display: inline-flex;
+    width: 100px;
+    margin-right: 50px;
+    border-radius: 10px;
+    border: 3px aqua;
+    border-style: solid double; 
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    
+}
+#submit:hover{
+    transition: all .5s ease 0.4s;
+    transform: scale(1.5) rotateY(360deg);
+    
+    color: forestgreen;
+     border: 3px red;
+        border-style: solid double; 
+
+        
+
+}
