@@ -11,9 +11,6 @@
     
     
 
-   
-    <h1>CURP</h1>
-    <p>Formulario para tramite de la CURP</p>
 
     <form action="procesar.php" method="post" class="contact_form">
                 <section class="encabezado">
@@ -39,9 +36,9 @@
 
                
                 <label id="radio" for="genero">Genero:</label>
-                <input id="radio" type="radio" name="genero" value="Hombre">
+                <input id="radio" type="radio" name="genero" value="H">
                 <label id="radio" for="">Hombre</label>
-                <input id="radio" type="radio" name="genero" value="Mujer">
+                <input id="radio" type="radio" name="genero" value="M">
                 <label id="radio" for="">Mujer</label>
 
            
@@ -138,10 +135,11 @@
                      <input type="text" name="correo" id="correo" placeholder="Escriba aqui su correo electrónico" required>
                 
                 </div>
-                    </div>
+                    
                 <div class="botones">
                     <button id="submit" name="enviar" type="submit">Enviar</button>
                     <button id="submit" name="borrar" type="reset">Borrar todo</button>
+                </div>
                 </div>
                 </div>
                 <!--**********************************************************************************-->

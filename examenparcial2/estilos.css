@@ -74,6 +74,7 @@ body{
      width: 8%;
     height: 15px;
      display: inline-flex;
+    margin-right: 10px;
 }
 input[type="text"],select{
     
