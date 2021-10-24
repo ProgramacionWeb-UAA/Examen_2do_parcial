@@ -1,4 +1,5 @@
 
+
    
     <?php
     /*PROCESAR LOS DATOS*/
@@ -122,8 +123,10 @@
     /*echo "La conexion se realizo correctamente a la base de datos";
     */$query="INSERT INTO curpweb (nombres,p_apellido,s_apellido,genero,dia,mes,anio,entidad,correo,curp)VALUES ('$nombres','$apellido1','$apellido1','$genero','$dia','$mes','$anio','$entidad','$correo','$curp')";
     mysqli_query($conexion,$query);
+
     echo $nombres." ".$apellido1." ".$apellido2;
     
+
     ?>
     
 

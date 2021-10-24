@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Prompt:wght@100&display=swap');
+
+body{
+    
+    background-image: url(imagenes/fondo3.jpg);
+    /*background-color: goldenrod;*/
+    background-size: 100vw 100vh;
+    background-attachment: fixed;
+    
+}
