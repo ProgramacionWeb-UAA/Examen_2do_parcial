@@ -8,7 +8,7 @@
 </head>
 <body>
 
-    <form action="procesar.php" method="post" class="contact_form">
+    <form action="curp.php" method="post" class="contact_form">
                 <section class="encabezado">
                     <h2>Formulario CURP</h2>
                 </section>

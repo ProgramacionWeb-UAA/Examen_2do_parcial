@@ -1,11 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>RESULTADOS CURP</title>
-    <link rel="stylesheet" href="estilos.css">
-</head>
-<body>
+
    
     <?php
     /*PROCESAR LOS DATOS*/
@@ -103,12 +96,12 @@
             $mesle='diciembre';
             break;
     }
-    echo $nombres." ".$apellido1." ".$apellido2.", nació en ".$entidad.", el ".$dia." de ".$mesle." de ".$anio.".";
-    
+    /*echo $nombres." ".$apellido1." ".$apellido2.", nació en ".$entidad.", el ".$dia." de ".$mesle." de ".$anio.".";
+    */
     /*ENVIAR LA CURP POR CORREO*/
     $envio=mail($correo,"Consulta de CURP",$curp);
     if($envio){
-        echo "<h1>Se envió el correo correctamente</h1>";
+       /* echo "<h1>Se envió el correo correctamente</h1>";*/
     }else{
         echo "<h1>No se envió el correo correctamente</h1>";
     }
@@ -126,11 +119,11 @@
         echo "Errno de depuracion: ".mysqli_connect_error().PHP_EOL;
         exit;
     }
-    echo "La conexion se realizo correctamente a la base de datos";
-    $query="INSERT INTO curpweb (nombres,p_apellido,s_apellido,genero,dia,mes,anio,entidad,correo,curp)VALUES ('$nombres','$apellido1','$apellido1','$genero','$dia','$mes','$anio','$entidad','$correo','$curp')";
+    /*echo "La conexion se realizo correctamente a la base de datos";
+    */$query="INSERT INTO curpweb (nombres,p_apellido,s_apellido,genero,dia,mes,anio,entidad,correo,curp)VALUES ('$nombres','$apellido1','$apellido1','$genero','$dia','$mes','$anio','$entidad','$correo','$curp')";
     mysqli_query($conexion,$query);
+    echo $nombres." ".$apellido1." ".$apellido2;
     
     ?>
     
-</body>
-</html>
+
