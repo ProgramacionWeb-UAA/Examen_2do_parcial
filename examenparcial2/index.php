@@ -16,38 +16,47 @@
                 <div class="contenedor">
                 <div class="sec-izq">
                 <div class="sec-nombre">
+                  <div class="label-nombre">
                    <label for="names">Nombres</label>
+                   <label for="primerapellido">Primer Apellido</label>
+                   <label for="segundoapellido">Segundo Apellido</label>
+                   </div>
+                   
+                   
+                   <div class="input-nombre">
                    <input type="text" name="nombres" id="nombres" placeholder="Escribe tu(s) nombre(s)" required>
                    <!--<span class="form_hint">Formato correcto: "Nombre(s)"</span>-->
-                    <label for="primerapellido">Primer Apellido</label>
                     <input type="text" name="apellido1" id="primerapellido" placeholder="Escribe tu primer apellido" required>
                     <!--<span class="form_hint">Formato correcto: "Primer Apellido"</span>-->
                
-                    <label for="segundoapellido">Segundo Apellido</label>
                     <input type="text" name="apellido2" id="segundoapellido" placeholder="Escribe tu segundo apellido" required>
                     <!--<span class="form_hint">Formato correcto: "Segundo Apellido"</span>-->
-                
+                </div>
+                </div>
                 <!--**********************************************************************************-->
 
-               
+               <div class="genero">
                     <label id="genero" for="genero">Genero</label>
-                    
                        <section class="hombre">
-                        <input id="radio" type="radio" name="genero" value="H">
-                        <label class="label-radio" id="radio" for="">Hombre</label>
+                         <input id="radio-hombre" type="radio" name="genero" value="H">
+                        <label class="label-hombre" id="radio-hombre" for="">Hombre</label>
                     </section>
-                    <section class="mujer">
-                        <input id="radio" type="radio" name="genero" value="M">
-                        <label class="label-radio" id="radio" for="">Mujer</label>
-                    </section>
+                       <section class="mujer">
+                        <input id="radio-mujer" type="radio" name="genero" value="M">
+                        <label class="label-radio" id="radio-mujer" for="">Mujer</label>
+                        </section>
+                    </div>
            
                 
 
                 <!--**********************************************************************************-->
-                </div>
+            
                 
                 <div class="sec-fecha">
+                    <div class="label-fecha">
                     <label for="fechanacimiento">Fecha de Nacimiento</label>
+                    </div>
+                    <div class="select-option">
                     <select name="dia" id="dia">
                            <option>Dia</option>
                            <?php
@@ -85,13 +94,19 @@
                                }
                            ?>
                        </select>
+                       </div>
                   </div>
                 </div>
                 <!--**********************************************************************************--> 
                 <div class="sec-der">
                    <div class="sec-other">
-                  
+                      <div class="label-other">
                     <label for="entidad">Entidad Federativa</label>
+                    
+                    <label for="correo">Correo Electrónico</label>
+                    
+                    </div>
+                    <div class="select-other">
                      <select name="enti" id="enti">
                           <option disabled selected>-Selecciona una opción-</option>
                            <option value="AS">AGUASCALIENTES</option>
@@ -127,17 +142,23 @@
                            <option value="YN">YUCATAN</option>
                            <option value="ZS">ZACATECAS</option>
                        </select>
+                       
                 <!--**********************************************************************************-->
                 
                 
-                    <label for="correo">Correo Electrónico</label>
+                    
                      <input type="text" name="correo" id="correo" placeholder="Escriba aqui su correo electrónico" required>
-                
+                </div>
                 </div>
                     
                 <div class="botones">
                     <button id="submit" name="enviar" type="submit">Enviar</button>
                     <button id="submit" name="borrar" type="reset">Borrar todo</button>
+                </div>
+                <div class="icono">
+                    
+                    
+                    
                 </div>
                 </div>
                 </div>

@@ -25,19 +25,20 @@ body{
 }*/
 .contenedor{
     display: flex;
-    width: 80%;
-    height: 90%;
+    width: 850px;
+    height: 400px;
     /*background-color: firebrick;*/
     background: linear-gradient(45deg,firebrick 70%,antiquewhite);
     margin: auto;
     box-shadow: 2px 2px 3px 5px white;
-    padding: 50px 70px;
+    padding: 20px 20px;
     box-sizing: border-box;
     border-radius: 10px;
 }
 .contenedor .sec-izq{
     width: 50%;
     height: 100%;
+  
    
 }
 
@@ -49,48 +50,46 @@ body{
     
 }
 
-
-
-.contenedor .sec-izq *,.contenedor .sec-der *{
-    
-    display:block;
-     
-    
+.sec-nombre{
+    display: flex;
+    flex-direction: row;
+    height: 150px;
 }
 
 
-.sec-nombre *,.sec-fecha *, .sec-other *{
-    width: 80%;
-    height: 25px;
+
+.sec-nombre *,.sec-fecha *, .sec-other *,.genero {
     border-radius: 10px;
     font-weight: 800;
-    text-align:center;
-    
-    margin-bottom: 6px;
-}
-.sec-nombre label, .sec-fecha label, .sec-other label{
-    font-family: "calibri";
-    font-size: 20px;
-    line-height: 40px;
-}
-
-#genero{
-    
-    line-height: 40px;
     
 }
 
-#radio{
-     width: 8%;
-     display: inline-flex;
+.genero{
+  /*  padding: 2px 15px;*/
+    width: 90%;
+    margin-top: 30px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+}
+#radio-hombre{
+    margin: 0px;
     
-    height: 15px;
-    margin-right: 10px;
+}
+.mujer{
+    padding: 0 20px;
+}
+input, select{
+    text-align: center;
 }
 
 input[type="text"],select{
+    width: 200px;
+    height: 25px;
+    
     font-size: 12px;
     box-shadow: 5px 2px 10px aqua;
+    
 }
 #enti{
     
@@ -99,15 +98,17 @@ input[type="text"],select{
 }
 .botones{
    
-    width: 80%;
+    width: 100%;
    
     padding: 0px 15px;
+    display: flex;
+    justify-content: center;
 }
 #submit{
      display: inline-flex;
     margin-top: 20px;
     width: 100px;
-    margin-right: 10px;
+    margin-right: 30px;
     border-radius: 10px;
     border: 3px aqua;
     border-style: solid double; 
@@ -151,5 +152,76 @@ h2{
     box-shadow: white 5px 5px 10px;
     letter-spacing: 3px;
     background: rgba(0,0,0,0.35);
+    
 }
- 
+
+.input-nombre{
+    
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.label-nombre{
+    height: 100%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-right: 20px;
+    
+}
+
+.sec-fecha{
+    height: 150px;
+    padding: 5px 0px;
+    display: flex;
+    align-items: center;
+    
+}
+.label-fecha{
+    
+    width: 30%;
+    margin-right: 25px;
+}
+.label-fecha label{
+    
+}
+.select-option{
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+.sec-other{
+    
+    height: 95px;
+    display: flex;
+    /*justify-content: space-between;*/
+}
+.label-other{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 20px;
+}
+.select-other{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+.sec-der .icono{
+    
+    margin: auto;
+    width: 150px;
+    height: 150px;
+    background-image: url(imagenes/fondo1.jpg);
+    margin-top: 20px;
+    border-radius: 50%;
+    
+}
