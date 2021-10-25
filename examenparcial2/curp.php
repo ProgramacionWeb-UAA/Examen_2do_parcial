@@ -7,12 +7,7 @@
     <link rel="stylesheet" href="estilos_mostrar.css">
 </head>
 <body>
-    
-    
 
-    
-    
-    
     <div class="contenedor">
         <header>
             <h1 class="titulo">CURP</h1>
@@ -20,9 +15,7 @@
             <?php
         
                 include("procesar.php");
-        
-    
-    
+
                 ?>
             
             </h1>
@@ -64,38 +57,33 @@
                   mysqli_close($conexion)
                 ?>
                 
-      
+          
                 
                 
             </tr>
             
         </table>
         <section class="imagenes">
-            <img src="imagenes/fondo1.jpg" alt="" class="img1">
-            <img src="imagenes/fondo2.jpg" alt="">
+            <img src="imagenes/img4.png" alt="" class="img1">
+            <img src="imagenes/img8.png" alt="" class="img4">
             
         </section>
     </div>
     
     <footer>
         <div class="botones">
-        <button type="submit">Volver a consultar curp</button>
+        <a href="index.php"><button type="submit" type="submit">Volver a consultar curp</button></a>
+        
         </div>
         
         <section class="redes">
-            <h1>Redes sociales</h1>
+            <h2>Redes sociales</h2>
             <div class="iconos">
             <a href="facebook.com" class="icon-facebook"></a>
             <a href="twitter.com" class="icon-twitter"></a>
             <a href="instagram.com" class="icon-instagram"></a>
             <a href="whatsapp.com" class="icon-whatsapp"></a>
             </div>
-            
-            
-            
-            
-            
-            
             
         </section>
         

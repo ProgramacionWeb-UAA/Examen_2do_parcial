@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Prompt:wght@100&display=swap');
 *{
     
     margin: 0px;
@@ -8,29 +9,51 @@
 
 body{
     
-    
-    background-color: aqua;
-    
+    background-image: url(imagenes/fondo3.jpg);
+    /*background-color: aqua;*/
+    background-size: 100vw 100vh;
+    background-attachment: fixed;
 }
 
 h1{
     text-align: center;
+    font-size: 30px;
+    margin: 20px;
     
+    background: linear-gradient(to bottom right,purple,white);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    width: 600px;
+    font-weight: 900;
+    text-shadow: 10px 10px 10px black;
+}
+h2{
+    font-size: 20px;
+    text-align: center;
+    margin: 15px;
+    padding: 15px;
 }
 .contenedor{
-    width: 800px;
-    height: 300px;
+    width: 900px;
+    height: 400px;
     margin: auto;
-    margin-top: 100px;
-    background: rgba(1,0,0,0.5);
+    margin-top: 70px;
+    background: white;
+   /* background-color: white;*/
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-between;
+    
     /*align-items: center;
     
     */
     border-radius: 50px;
+    padding: 40px 30px;
+    box-sizing: border-box;
+    border-radius: 30px;
+    box-shadow: green 5px 5px 10px inset;
+    
 }
 table{
     width: 100%;
@@ -64,7 +87,8 @@ td{
     box-sizing: border-box;
     display: flex;
     justify-content: space-between;
-    
+    width: 120px;
+    height: 120px;
 }
 img{
     
@@ -74,7 +98,9 @@ img{
    
 }
 .img1{
-     border-radius: 50%;   
+     /*border-radius: 50%;*/   
+}
+.img4{
     
 }
 
@@ -82,18 +108,20 @@ img{
     width: 100%;
     height: 200px;
     display: block;
+    
 }
 .botones{
     display: flex;
     justify-content: center;
-    
+    margin: -35px;
+    /*left: -500px;*/
     
 }
 button{
     margin-top: 100px;
     border-radius: 10px;
     background-color: greenyellow;
-    font-family: "calibri";
+    font-family: 'Prompt', sans-serif;;
     font-size: 15px;
     font-weight: 800;
     padding: 10px;
