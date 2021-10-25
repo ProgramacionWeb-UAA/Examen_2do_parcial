@@ -18,10 +18,10 @@
     $i=strlen($nombres);
     $apellido1=strtoupper($apellido1);
     $apellido2=strtoupper($apellido2);
-    $parte1='';
+    $parte1=$apellido1[0];
 
     for($i=0;$i<strlen($apellido1);$i++){
-        if($var<2){
+        if($var<1){
             if($apellido1[$i]=='A' || $apellido1[$i]=='E' || $apellido1[$i]=='I' || $apellido1[$i]=='O' || $apellido1[$i]=='U'){
                 $parte1=$parte1.$apellido1[$i];
                 $var=$var+1;
@@ -100,12 +100,12 @@
     /*echo $nombres." ".$apellido1." ".$apellido2.", nació en ".$entidad.", el ".$dia." de ".$mesle." de ".$anio.".";
     */
     /*ENVIAR LA CURP POR CORREO*/
-    $envio=mail($correo,"Consulta de CURP",$curp);
+    /*$envio=mail($correo,"Consulta de CURP",$curp);
     if($envio){
        /* echo "<h1>Se envió el correo correctamente</h1>";*/
-    }else{
+   /* }else{
         echo "<h1>No se envió el correo correctamente</h1>";
-    }
+    }*/
     
     /*CONECTAR A LA BASE DE DATOS*/
     $servidor="localhost";
