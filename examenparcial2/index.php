@@ -17,9 +17,9 @@
                 <div class="sec-izq">
                 <div class="sec-nombre">
                   <div class="label-nombre">
-                   <label for="names">Nombres</label>
-                   <label for="primerapellido">Primer Apellido</label>
-                   <label for="segundoapellido">Segundo Apellido</label>
+                   <label for="names">Nombres:</label>
+                   <label for="primerapellido">Primer Apellido:</label>
+                   <label for="segundoapellido">Segundo Apellido:</label>
                    </div>
                    
                    
@@ -36,7 +36,7 @@
                 <!--**********************************************************************************-->
 
                <div class="genero">
-                    <label id="genero" for="genero">Genero</label>
+                    <label id="genero" for="genero">Genero:</label>
                        <section class="hombre">
                          <input id="radio-hombre" type="radio" name="genero" value="H">
                         <label class="label-hombre" id="radio-hombre" for="">Hombre</label>
@@ -54,7 +54,7 @@
                 
                 <div class="sec-fecha">
                     <div class="label-fecha">
-                    <label for="fechanacimiento">Fecha de Nacimiento</label>
+                    <label for="fechanacimiento">Fecha de Nacimiento:</label>
                     </div>
                     <div class="select-option">
                     <select name="dia" id="dia">
@@ -101,9 +101,9 @@
                 <div class="sec-der">
                    <div class="sec-other">
                       <div class="label-other">
-                    <label for="entidad">Entidad Federativa</label>
+                    <label for="entidad">Entidad Federativa:</label>
                     
-                    <label for="correo">Correo Electrónico</label>
+                    <label for="correo">Correo Electrónico:</label>
                     
                     </div>
                     <div class="select-other">
@@ -155,16 +155,19 @@
                     <button id="submit" name="enviar" type="submit">Enviar</button>
                     <button id="submit" name="borrar" type="reset">Borrar todo</button>
                 </div>
-                <div class="icono">
+                 <div class="icono">
                     
                     
                     
+                    
+                </div> 
+                 
                 </div>
-                </div>
+                    
                 </div>
                 <!--**********************************************************************************-->
                  <!--HOLAAA-->
-
+                   
 
     </form>
     

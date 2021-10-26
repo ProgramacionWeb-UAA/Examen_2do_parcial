@@ -3,16 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>Curp</title>
-    <link href="https://file.myfontastic.com/zmGVYTk8c485ktmePB4HkF/icons.css" rel="stylesheet">
+     <link href="https://file.myfontastic.com/TgPtxhRgGLiA2k2hxypBJD/icons.css" rel="stylesheet">
     <link rel="stylesheet" href="estilos_mostrar.css">
 </head>
 <body>
-    
-    
 
-    
-    
-    
     <div class="contenedor">
         <header>
             <h1 class="titulo">CURP</h1>
@@ -20,9 +15,7 @@
             <?php
         
                 include("procesar.php");
-        
-    
-    
+
                 ?>
             
             </h1>
@@ -64,44 +57,35 @@
                   mysqli_close($conexion)
                 ?>
                 
-      
-                
-                
             </tr>
             
         </table>
         <section class="imagenes">
-            <img src="imagenes/fondo1.jpg" alt="" class="img1">
-            <img src="imagenes/fondo2.jpg" alt="">
+            <img src="imagenes/imprimir.png" alt="" class="img1">
+            <img src="imagenes/codigo.png" alt="" class="img2">
             
         </section>
     </div>
     
-    <footer>
+    
+       <div class="botoness">
         <div class="botones">
-        <button type="submit">Volver a consultar curp</button>
+        <a href="index.php"><button type="submit">VOLVER A CONSULTAR</button></a>
         </div>
-        
-        <section class="redes">
-            <h1>Redes sociales</h1>
+          
+           <footer class="footer">
+            <!--<h1>Redes sociales</h1>-->
             <div class="iconos">
-            <a href="facebook.com" class="icon-facebook"></a>
-            <a href="twitter.com" class="icon-twitter"></a>
-            <a href="instagram.com" class="icon-instagram"></a>
-            <a href="whatsapp.com" class="icon-whatsapp"></a>
+            <a href="https://www.facebook.com" class="icon-facebook"></a>
+            <a href="https://www.twitter.com" class="icon-twitter"></a>
+            <a href="https://www.instagram.com" class="icon-instagram"></a>
+            <a href="https://www.whatsapp.com" class="icon-whatsapp"></a>
             </div>
             
-            
-            
-            
-            
-            
-            
-        </section>
-        
-        
     </footer>
-    
-    
+    </div>
+    <div class="frase">
+        <b><p class="parrafo">&copy;Ingenieria en Sistemas Computacionales UAA 2021 - Todos los derechos reservados</p></b>
+    </div>
 </body>
 </html>
