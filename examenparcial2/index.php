@@ -89,7 +89,7 @@
                     <select name="anio" id="anio">
                             <option disabled selected>Año</option>
                            <?php
-                               for($i=1950;$i<=2021;$i++){
+                               for($i=1950;$i<=date("Y");$i++){
                                echo '<option value="'.$i.'">'.$i.'</option>';
                                }
                            ?>
