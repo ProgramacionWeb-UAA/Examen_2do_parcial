@@ -70,7 +70,7 @@
     
        <div class="botoness">
         <div class="botones">
-        <a href="index.php"><button type="submit">VOLVER A CONSULTAR</button></a>
+        <a href="index.php"><button type="submit" id="submit">VOLVER A CONSULTAR</button></a>
         </div>
           
            <footer class="footer">
