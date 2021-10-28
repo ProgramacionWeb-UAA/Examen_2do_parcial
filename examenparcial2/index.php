@@ -7,7 +7,15 @@
     <link rel="stylesheet" href="./estilos.css">
 </head>
 <body>
-
+    <div class="banda">
+        <div class="img1">
+            
+        </div>
+        <p class="texto-banda">Lorem ipsum dolor sit amet, consectetur.</p>
+        <div class="img2">
+            
+        </div>
+    </div>
     <form action="curp.php" method="post" class="contact_form">
                 <section class="encabezado">
                     <b><h2>FORMULARIO CURP</h2></b>

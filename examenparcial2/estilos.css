@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Prompt:wght@100&display=swap');
 
 
@@ -7,9 +6,44 @@
 body{
     
     background-image: url(imagenes/fondo3.jpg);
+    /*background-color: goldenrod;*/
     background-size: 100vw 100vh;
     background-attachment: fixed;
+    padding: 0px;
+    margin: 0px;
+}
+
+.banda{
+    width: 100%;
+    height: 120px;
+    background-color: #61D416;
+    padding: 10px 15px;
+    box-sizing: border-box;
+    margin: auto;
+    /*FLEXBOX*/
+    display: flex;
+    justify-content: space-between;
     
+}
+.banda .img1{
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    border-radius: 50%;
+}
+
+.banda .img2{
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    border-radius: 50%;
+    
+    
+}
+.banda .texto-banda{
+    
+    margin-top: 40px;
+    font-size: 30px;
 }
 
 .encabezado {
@@ -23,18 +57,26 @@ body{
     text-shadow: 15px 25px 27px gray;
 
 }
-
+/*#requeridos{
+    
+    box-shadow: 5px 2px 5px aqua inset;
+    font-style: italic;
+    
+}*/
 .contenedor{
     display: flex;
     width: 850px;
     height: 400px;
-    background: linear-gradient(45deg,firebrick 70%,antiquewhite);
+    /*background-color: firebrick;*/
+    background:  linear-gradient(45deg,rgba(178,34,34,0.6) 70%,antiquewhite);
+    /*background: linear-gradient(to bottom right,green,white,red);*/
     margin: auto;
     box-shadow: 2px 2px 3px 5px white;
     padding: 20px 20px;
     box-sizing: border-box;
     border-radius: 10px;
     color: white;
+    
 }
 .contenedor .sec-izq{
     width: 50%;
@@ -66,7 +108,7 @@ body{
 }
 
 .genero{
-
+  /*  padding: 2px 15px;*/
     width: 90%;
     margin-top: 35px;
     box-sizing: border-box;
@@ -83,7 +125,9 @@ body{
     margin: 0px;
     margin-right: 15px;
 }
-
+/*.mujer{
+    padding: 0 20px;
+}*/
 input, select{
     text-align: center;
 }
@@ -175,6 +219,8 @@ h2{
     flex-wrap: nowrap;
     justify-content: space-between;
     margin-right: 10px;
+    /*background-color: white;*/
+    /*text-shadow: 5px 5px 7px gray;*/
     font-size: 15px;
     margin-left: 15px;
     
@@ -208,7 +254,7 @@ h2{
     
     height: 95px;
     display: flex;
-    
+    /*justify-content: space-between;*/
 }
 .label-other{
     display: flex;
@@ -239,7 +285,7 @@ h2{
 .footer{
     color:red;
     text-decoration: none;
-   
+    /*padding: 10px;*/
     text-align: center;
     border-radius: 20px;
     width: 30%;
@@ -267,8 +313,16 @@ h2{
 }
 
 .iconos{
-   
+    /*display: flex;*/
     
     margin-top: 30px;;
+    
+}
+
+@media(max-width:950px){
+    
+    .banda{
+        width: 950px;
+    }
     
 }
