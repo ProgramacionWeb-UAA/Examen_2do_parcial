@@ -3,23 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <title>Formulario Examen</title>
-    
+    <link href="https://file.myfontastic.com/TgPtxhRgGLiA2k2hxypBJD/icons.css" rel="stylesheet">
     <link rel="stylesheet" href="./estilos.css">
 </head>
 <body>
 
     <form action="curp.php" method="post" class="contact_form">
                 <section class="encabezado">
-                    <h2>Formulario CURP</h2>
+                    <b><h2>FORMULARIO CURP</h2></b>
                 </section>
                 <!--**********************************************************************************-->
                 <div class="contenedor">
                 <div class="sec-izq">
                 <div class="sec-nombre">
                   <div class="label-nombre">
-                   <label for="names">Nombres</label>
-                   <label for="primerapellido">Primer Apellido</label>
-                   <label for="segundoapellido">Segundo Apellido</label>
+                   <font color="white"><label for="names">Nombres:</label></font>
+                   <font color="white"><label for="primerapellido">Primer Apellido:</label></font>
+                   <font color="white"><label for="segundoapellido">Segundo Apellido:</label></font>
                    </div>
                    
                    
@@ -36,14 +36,14 @@
                 <!--**********************************************************************************-->
 
                <div class="genero">
-                    <label id="genero" for="genero">Genero</label>
+                    <font color="white"><label id="genero" for="genero">Genero:</label></font>
                        <section class="hombre">
                          <input id="radio-hombre" type="radio" name="genero" value="H">
-                        <label class="label-hombre" id="radio-hombre" for="">Hombre</label>
+                        <font color="white"><label class="label-hombre" id="radio-hombre" for="">Hombre</label></font>
                     </section>
                        <section class="mujer">
                         <input id="radio-mujer" type="radio" name="genero" value="M">
-                        <label class="label-radio" id="radio-mujer" for="">Mujer</label>
+                        <font color="white"><label class="label-radio" id="radio-mujer" for="">Mujer</label></font>
                         </section>
                     </div>
            
@@ -54,7 +54,7 @@
                 
                 <div class="sec-fecha">
                     <div class="label-fecha">
-                    <label for="fechanacimiento">Fecha de Nacimiento</label>
+                    <font color="white"><label for="fechanacimiento">Fecha de Nacimiento:</label></font>
                     </div>
                     <div class="select-option">
                     <select name="dia" id="dia">
@@ -101,9 +101,9 @@
                 <div class="sec-der">
                    <div class="sec-other">
                       <div class="label-other">
-                    <label for="entidad">Entidad Federativa</label>
+                     <font color="white"><label for="entidad">Entidad Federativa:</label></font>
                     
-                    <label for="correo">Correo Electrónico</label>
+                     <font color="white"><label for="correo">Correo Electrónico:</label></font>
                     
                     </div>
                     <div class="select-other">
@@ -155,17 +155,29 @@
                     <button id="submit" name="enviar" type="submit">Enviar</button>
                     <button id="submit" name="borrar" type="reset">Borrar todo</button>
                 </div>
-                <div class="icono">
+                 <div class="icono">
                     
                     
                     
+                    
+                </div> 
+                 
                 </div>
-                </div>
+                    
                 </div>
                 <!--**********************************************************************************-->
                  <!--HOLAAA-->
-
-
+        <footer class="footer">
+            <!--<h1>Redes sociales</h1>-->
+            <div class="iconos">
+            <a href="https://www.facebook.com" class="icon-facebook"></a>
+            <a href="https://www.twitter.com" class="icon-twitter"></a>
+            <a href="https://www.instagram.com" class="icon-instagram"></a>
+            <a href="https://www.whatsapp.com" class="icon-whatsapp"></a>
+            </div>
+            
+        </footer> 
+    
     </form>
     
 </body>

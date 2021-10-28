@@ -1,27 +1,44 @@
-*{
-    
-    margin: 0px;
-    padding: 0px;
-    
-    
-}
+@import url('https://fonts.googleapis.com/css2family=Anton&family=Prompt:wght@100&display=swap');
 
 body{
     
-    
-    background-color: aqua;
+    background-image: url(imagenes/fondo3.jpg);
+    /*background-color: red;*/
+    background-size: 100vw 100vh;
+    background-attachment: fixed;
     
 }
 
 h1{
     text-align: center;
+    margin: -45px;
+    padding: 10px;
+    margin-top: 45px;
+    /*color: white;*/
+    
+}
+.titulo{
+    text-align: center;
+    /*padding: 60px;*/
+    margin: auto;
+    box-shadow: 2px 2px 3px 5px white;
+    font-weight: 900;
+    font-family: 'Prompt', sans-serif;
+    width: 600px;
+    text-shadow: 15px 25px 27px gray;
+    box-sizing: border-box;
+    border-radius: 30px;
+    color: white;
+    right: 500px;
+    margin-top: 50px;
+    font-size: 30px;
     
 }
 .contenedor{
-    width: 800px;
-    height: 300px;
+    width: 1000px;
+    height: 450px;
     margin: auto;
-    margin-top: 100px;
+    margin-top: 50px;
     background: rgba(1,0,0,0.5);
     display: flex;
     flex-direction: column;
@@ -31,24 +48,31 @@ h1{
     
     */
     border-radius: 50px;
+    box-shadow: white 5px 5px 10px inset;
+    background: linear-gradient(45deg,firebrick 70%,antiquewhite);
+    
+    
 }
 table{
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    border-spacing: 8px;
-    
-    
+    border-spacing: 5px;
+    padding: -150px 40px;
+    text-align: center;
+    margin: -5px;
+    margin-top: 50px;
+    font-size: 30px;
+    /*color: white;*/
 }
 tr{
-    
     
     
 }
  td{
     
-    border: 2px solid black;
+    border: 3px solid black;
     
     
 }
@@ -63,65 +87,96 @@ td{
     padding: 15px;
     box-sizing: border-box;
     display: flex;
-    justify-content: space-between;
-    
+    justify-content: space-around;
+    /*left: 500px;*/
+    padding: 20px;
+    margin: 5px;
+    cursor: pointer;
 }
 img{
     
-    width: 120px;
-     height: 120px;
+    width: 150px;
+     height: 150px;
     vertical-align: top;
    
 }
 .img1{
-     border-radius: 50%;   
+    border-radius: 1px;   
+    width: 110px;
+    height: 110px;
+    right: 10px;
+}
+.img2{
+    width: 110px;
+    height: 110px;
     
 }
-
 .footer{
-    width: 100%;
-    height: 200px;
-    display: block;
+    color:red;
+    text-decoration: none;
+    /*padding: 10px;*/
+    text-align: center;
+    border-radius: 20px;
+    width: 30%;
+    box-sizing: border-box;
+    color: darkgreen;
+    margin-top: 27px;
+}
+.footer .iconos [class^="icon-"]{
+    display: inline-block;
+    color: darkgreen;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px;
+    background: white;
+    border-radius: 50%;
+    line-height: 20px;
+}
+.footer .iconos [class^="icon-"]:hover{
+    transition: all 1s ease .1s;
+    transform: scale(2) rotate3d(0,1,0,720deg);
+    color: red;
+    background: rgba(0,0,0,0.5);
+    box-shadow: white 3px 3px 3px inset;
+    
+}
+.botoness{
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+   
 }
 .botones{
+    width: 50%;
     display: flex;
-    justify-content: center;
-    
-    
+    justify-content:flex-end;
+    align-items: center;
+    color: white;
 }
 button{
-    margin-top: 100px;
+    margin-top: 20px;
     border-radius: 10px;
-    background-color: greenyellow;
-    font-family: "calibri";
+    background-color: #228B22;
+    font-family: 'Prompt', sans-serif;
     font-size: 15px;
     font-weight: 800;
-    padding: 10px;
+    padding: 15px;
     box-sizing: border-box;
     cursor: pointer;
 }
-button:hover{
-    
+
+.iconos{
+    /*display: flex;*/
+    justify-content: center;
     
 }
 
-.redes{
-    margin-top: 50px;
-    
-    
-}
-.iconos{
-    
+.frase{
     display: flex;
+    font-family: 'Prompt', sans-serif;
+    font-size: 15px;
     justify-content: center;
-    
-    
-}
-.redes [class^="icon-"]{
-    
-    text-decoration: none;
-    color: black;
-    margin-right: 15px;
-    
-    
+    color: darkgreen;
+    margin-top: 5px;
 }
