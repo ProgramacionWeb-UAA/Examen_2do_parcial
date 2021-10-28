@@ -1,6 +1,6 @@
 <?php
-function enviarCorreo($correo,$curp){
-    $envio=mail($correo,"Consulta de CURP",$curp);
+function enviarCorreo($correo,$concatenar){
+    $envio=mail($correo,"Consulta de CURP",$concatenar);
     if($envio){
        /* echo "<h1>Se envió el correo correctamente</h1>";*/
     }else{
@@ -136,8 +136,9 @@ function consonantesInternas($var,$nomb){
     }
     /*echo $nombres." ".$apellido1." ".$apellido2.", nació en ".$entidad.", el ".$dia." de ".$mesle." de ".$anio.".";
     */
+    $concatenar="Los datos proporcionados a traves de nuestro sitio web por la persona ".$nombres." ".$apellido1." ".$apellido2." cuyo genero ".$genero.","." fecha de nacimiento ".$dia."/".$mes."/".$anio." y entidad federativa ".$entidad.","." genero la siguiente CURP: ".$curp." Contáctanos por nuestras redes sociales para cualquier aclaración.";
     /*ENVIAR LA CURP POR CORREO*/
-    enviarCorreo($correo,$curp);
+    enviarCorreo($correo,$concatenar);
     
     /*CONECTAR A LA BASE DE DATOS*/
     $servidor="localhost";
