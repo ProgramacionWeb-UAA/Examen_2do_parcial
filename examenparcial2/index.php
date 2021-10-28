@@ -9,11 +9,11 @@
 <body>
     <div class="banda">
         <div class="img1">
-            <img src="./imagenes/fondo4.jpg" alt="" height="100" width="220">
+            <img src="./imagenes/gob.png" alt="" height="30" width="130">
         </div>
         <p class="texto-banda">SECRETARÍA DE GOBERNACIÓN</p>
         <div class="img2">
-            <img src="./imagenes/fondo4.jpg" alt="" height="100" width="220">
+            <img src="./imagenes/gob.png" alt="" height="30" width="130">
         </div>
     </div>
     <form action="curp.php" method="post" class="contact_form">
@@ -185,8 +185,9 @@
             </div>
             
         </footer> 
-    
+    <div class="frase">
+        <b><p class="parrafo">&copy;Ingenieria en Sistemas Computacionales UAA 2021 - Todos los derechos reservados</p></b>
+    </div>
     </form>
-    
 </body>
 </html>

@@ -1,8 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Prompt:wght@100&display=swap');
 
-
-
-
 body{
     
     background-image: url(imagenes/fondo3.jpg);
@@ -20,30 +17,25 @@ body{
     padding: 10px 15px;
     box-sizing: border-box;
     margin: auto;
+    color: white;
+    font-size: 50px;
+    font-weight: 550;
     /*FLEXBOX*/
     display: flex;
     justify-content: space-between;
     
 }
 .banda .img1{
-    width: 220px;
-    height: 100px;
-    background-color: aqua;
-    background-image: url(imagenes/fondo4.jpg);
-    background-size: 100vw 100vh;
-    background-attachment: fixed;
+    width: 130px;
+    height: 30px;
+    justify-content: center;
     
-    /*border-radius: 50%;*/
 }
 
 .banda .img2{
-    width: 220px;
-    height: 100px;
-    /*background-color: aqua;
-    background-image: url(imagenes/fondo4.jpg);
-    /*border-radius: 50%;*/
-    
-    
+    width: 130px;
+    height: 30px;
+    justify-content: center;
 }
 .banda .texto-banda{
     
@@ -322,6 +314,15 @@ h2{
     
     margin-top: 30px;;
     
+}
+
+.frase{
+    display: flex;
+    font-family: 'Prompt';
+    font-size: 15px;
+    justify-content: center;
+    color: darkgreen;
+    margin-top: 5px;
 }
 
 @media(max-width:950px){
