@@ -50,7 +50,7 @@
                         <font color="white"><label class="label-hombre" id="radio-hombre" for="">Hombre</label></font>
                     </section>
                        <section class="mujer">
-                        <input id="radio-mujer" type="radio" name="genero" value="M">
+                        <input id="radio-mujer" type="radio" name="genero" value="M" checked>
                         <font color="white"><label class="label-radio" id="radio-mujer" for="">Mujer</label></font>
                         </section>
                     </div>
@@ -65,8 +65,8 @@
                     <font color="white"><label for="fechanacimiento">Fecha de Nacimiento:</label></font>
                     </div>
                     <div class="select-option">
-                    <select name="dia" id="dia">
-                           <option>Dia</option>
+                    <select name="dia" id="dia" required>
+                           <option disabled selected>Dia</option>
                            <?php
                             $num='00';
                                for($i=1;$i<=31;$i++){
@@ -79,8 +79,8 @@
                                }
                            ?>
                        </select>
-                    <select name="mes" id="mes">
-                           <option>Meses del Año </option>
+                    <select name="mes" id="mes" required>
+                           <option disabled selected>Meses del Año </option>
                            <option value="01">Enero</option>
                            <option value="02">Febrero</option>
                            <option value="03">Marzo</option>
@@ -94,7 +94,7 @@
                            <option value="11">Noviembre</option>
                            <option value="12">Diciembre</option>
                        </select>
-                    <select name="anio" id="anio">
+                    <select name="anio" id="anio" required>
                             <option disabled selected>Año</option>
                            <?php
                                for($i=1950;$i<=date("Y");$i++){
@@ -115,7 +115,7 @@
                     
                     </div>
                     <div class="select-other">
-                     <select name="enti" id="enti">
+                     <select name="enti" id="enti" required>
                           <option disabled selected>-Selecciona una opción-</option>
                            <option value="AS">AGUASCALIENTES</option>
                            <option value="BC">BAJA CALIFORNIA</option>
@@ -185,9 +185,9 @@
             </div>
             
         </footer> 
+    </form>
     <div class="frase">
         <b><p class="parrafo">&copy;Ingenieria en Sistemas Computacionales UAA 2021 - Todos los derechos reservados</p></b>
     </div>
-    </form>
 </body>
 </html>

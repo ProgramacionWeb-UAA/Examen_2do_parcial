@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="estilos_mostrar.css">
 </head>
 <body>
-    <div class="banda">
+    <!--<div class="banda">
         <div class="img1">
             <img src="./imagenes/gob.png" alt="" height="30" width="130">
         </div>
@@ -15,7 +15,7 @@
         <div class="img2">
             <img src="./imagenes/gob.png" alt="" height="30" width="130">
         </div>
-    </div>
+    </div>-->
     <div class="contenedor">
         <header>
             <h1 class="titulo">CURP</h1>
