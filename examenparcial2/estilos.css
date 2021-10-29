@@ -23,7 +23,7 @@ body{
     /*FLEXBOX*/
     display: flex;
     justify-content: space-between;
-    
+    align-items: center;
 }
 .banda .img1{
      background-image: url("./imagenes/gob.png");
