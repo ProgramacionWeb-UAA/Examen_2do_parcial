@@ -26,6 +26,8 @@ body{
     
 }
 .banda .img1{
+     background-image: url("./imagenes/gob.png");
+    background-size: 100% 100%;
     width: 130px;
     height: 30px;
     justify-content: center;
@@ -33,6 +35,8 @@ body{
 }
 
 .banda .img2{
+     background-image: url("./imagenes/gob.png");
+    background-size: 100% 100%;
     width: 130px;
     height: 30px;
     justify-content: center;

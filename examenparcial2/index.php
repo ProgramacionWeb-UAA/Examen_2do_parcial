@@ -9,11 +9,11 @@
 <body>
     <div class="banda">
         <div class="img1">
-            <img src="./imagenes/gob.png" alt="" height="30" width="130">
+           
         </div>
         <p class="texto-banda">SECRETARÍA DE GOBERNACIÓN</p>
         <div class="img2">
-            <img src="./imagenes/gob.png" alt="" height="30" width="130">
+            
         </div>
     </div>
     <form action="curp.php" method="post" class="contact_form">
