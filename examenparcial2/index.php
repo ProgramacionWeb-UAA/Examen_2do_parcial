@@ -50,7 +50,7 @@
                         <font color="white"><label class="label-hombre" id="radio-hombre" for="">Hombre</label></font>
                     </section>
                        <section class="mujer">
-                        <input id="radio-mujer" type="radio" name="genero" value="M" checked>
+                        <input id="radio-mujer" type="radio" name="genero" value="M" >
                         <font color="white"><label class="label-radio" id="radio-mujer" for="">Mujer</label></font>
                         </section>
                     </div>
